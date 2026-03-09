@@ -1,0 +1,35 @@
+﻿.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.page-container__header {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.page-container__title {
+  color: var(--color-text);
+  font-size: 22px;
+  margin: 0;
+}
+
+.page-container__subtitle {
+  color: var(--color-text-muted);
+  margin: 6px 0 0;
+}
+
+.page-container__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .page-container__header {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+﻿.attendance-records-filter-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.page-alert {
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.page-alert--success {
+  background: var(--color-success-soft);
+  border: 1px solid var(--color-success-border);
+  color: var(--color-success-dark);
+}

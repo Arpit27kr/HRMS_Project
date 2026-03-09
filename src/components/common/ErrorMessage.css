@@ -1,0 +1,17 @@
+﻿.alert {
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.alert--error {
+  background: var(--color-danger-soft);
+  border: 1px solid var(--color-danger-border);
+  color: var(--color-danger-dark);
+}
+
+.alert--success {
+  background: var(--color-success-soft);
+  border: 1px solid var(--color-success-border);
+  color: var(--color-success-dark);
+}

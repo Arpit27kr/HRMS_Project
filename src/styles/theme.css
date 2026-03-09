@@ -1,0 +1,20 @@
+﻿:root {
+  --color-page: #f5f7fb;
+  --color-surface-muted: #f8fafc;
+  --color-border: #d8e0ea;
+  --color-text: #0f172a;
+  --color-text-muted: #5b667a;
+
+  --color-primary: #0f766e;
+  --color-primary-dark: #115e59;
+  --color-primary-soft: rgba(15, 118, 110, 0.15);
+
+  --color-danger: #b42318;
+  --color-danger-dark: #912018;
+  --color-danger-soft: #fee4e2;
+  --color-danger-border: #fecdca;
+
+  --color-success-dark: #065f46;
+  --color-success-soft: #dcfce7;
+  --color-success-border: #bbf7d0;
+}

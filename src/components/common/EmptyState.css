@@ -1,0 +1,23 @@
+﻿.empty-state {
+  align-items: center;
+  background: var(--color-surface-muted);
+  border: 1px dashed var(--color-border);
+  border-radius: 12px;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  text-align: center;
+}
+
+.empty-state__title {
+  color: var(--color-text);
+  font-size: 18px;
+  margin: 0;
+}
+
+.empty-state__description {
+  margin: 0;
+  max-width: 520px;
+}

@@ -16,6 +16,11 @@ def _default_database_url() -> str:
     return "sqlite:///./hrms_lite.db"
 
 
+def _default_cors_origin_regex() -> str:
+    """Return a safe default regex for localhost and Vercel domains."""
+    return r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$|^https://.*\.vercel\.app$"
+
+
 class Settings:
     """Container for environment-driven application settings."""
 
@@ -33,6 +38,10 @@ class Settings:
         )
         self.cors_origins: list[str] = _parse_cors_origins(
             os.getenv("CORS_ORIGINS", cors_origins_default)
+        )
+        self.cors_origin_regex: str = os.getenv(
+            "CORS_ORIGIN_REGEX",
+            _default_cors_origin_regex(),
         )
 
 

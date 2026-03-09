@@ -110,7 +110,18 @@ async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONR
     )
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    """Return basic API metadata for the root path."""
+    return {
+        "message": "HRMS Lite API is running.",
+        "docs": "/docs",
+        "health": "/health",
+    }
+
 @app.get("/health", response_model=HealthResponse)
 def health_check() -> HealthResponse:
     """Return a basic health status for uptime checks."""
     return HealthResponse(status="ok")
+
+
